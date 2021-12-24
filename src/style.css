@@ -1,0 +1,161 @@
+:root {
+  --color-black: #000000;
+  --color-blue: #176db7;
+  --color-light-blue: #1c7dd3;
+  --color-gray: #f1f1f1;
+  --color-dark-gray: #393939;
+
+  /*Font size*/
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: transparent;
+  border: transparent;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* header */
+header {
+  background-color: var(--color-black);
+}
+
+.main-menu-one {
+  width: 50%;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-items-ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: baseline;
+  float: right;
+}
+
+.menu-items-ul > li {
+  padding: 30px 0px 20px 0px;
+}
+
+.menu-items-ul > li > button > img {
+  width: 40px;
+  height: 40px;
+}
+
+.other-information {
+  width: 50%;
+}
+
+.others-ul {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin-right: 300px;
+}
+
+.other-item {
+  padding: 30px 30px 20px;
+}
+
+.other-item > button {
+  width: 150%;
+  padding: 10px;
+}
+
+li > button {
+  font-size: var(--font-medium);
+  color: white;
+  font-weight: bold;
+}
+
+li > button:hover {
+  color: var(--color-blue);
+}
+
+li > button > i {
+  font-size: var(--font-large);
+  margin-right: 5px;
+}
+
+/* part-two */
+.part-two {
+  margin: 0px;
+  position: relative;
+}
+
+/* model-ads */
+.model-ads-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.model-ads-slogan {
+  float: left;
+  position: absolute;
+  left: 19.4%;
+  top: 5%;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.model-ads-2-slogan {
+  top: 55%;
+}
+
+.model-ads-2-slogan > .slogan-2 {
+  width: 100%;
+}
+
+.slogan-1 {
+  margin-bottom: 35px;
+  color: var(--color-dark-gray);
+}
+
+.slogan-2 {
+  width: 90%;
+  font-size: calc(var(--font-large) * 1.7);
+  margin-bottom: 20px;
+}
+
+.slogan-3 {
+  font-size: var(--font-large);
+  margin-bottom: 40px;
+}
+
+.viewOffers {
+  background-color: var(--color-blue);
+  padding: 10px 25px;
+  border-radius: 2px;
+  color: white;
+}
+
+.viewOffers:hover {
+  background-color: var(--color-light-blue);
+}
